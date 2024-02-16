@@ -19,7 +19,134 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button8")
+                .setLeft("23.61904761904762em")
+                .setTop("29.714285714285715em")
+                .setWidth("12.114285714285714em")
+                .setHeight("5.104761904761904em")
+                .setCaption("Button")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput12")
+                .setLeft("25.142857142857142em")
+                .setTop("6.857142857142857em")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput15")
+                .setLeft("25.142857142857142em")
+                .setTop("14.476190476190476em")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput16")
+                .setLeft("25.142857142857142em")
+                .setTop("10.666666666666666em")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.ProgressBar")
+                .setHost(host,"xui_ui_progressbar2")
+                .setLeft("17.523809523809526em")
+                .setTop("38.857142857142854em")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button15")
+                .setLeft("49.523809523809526em")
+                .setTop("3.8095238095238093em")
+                .setWidth("5.257142857142857em")
+                .setHeight("2.8190476190476192em")
+                .setCaption("Button")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.AdminLog",
+                        "args" : [true],
+                        "method" : "switch",
+                        "event" : 1
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
