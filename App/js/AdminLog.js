@@ -50,6 +50,28 @@ xui.Class('App.Name4', 'xui.Module',{
                 .setWidth("7.542857142857143em")
                 .setHeight("4.3428571428571425em")
                 .setCaption("Button")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.AdminTool",
+                        "args" : [true],
+                        "method" : "switch",
+                        "conditions" : [
+                            {
+                                "left" : "{page.xui_ui_input6}",
+                                "symbol" : "=",
+                                "right" : "{1342}"
+                            },
+                            {
+                                "left" : "{page.xui_ui_input7}",
+                                "symbol" : "=",
+                                "right" : "{admin}"
+                            }
+                        ],
+                        "event" : 1
+                    }
+                ])
             );
             
             append(
