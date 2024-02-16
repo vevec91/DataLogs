@@ -40,6 +40,7 @@ xui.Class('App.AdminLog', 'xui.Module',{
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Input")
+                .setValue("admin")
             );
             
             append(
@@ -60,13 +61,13 @@ xui.Class('App.AdminLog', 'xui.Module',{
                         "conditions" : [
                             {
                                 "left" : "{page.xui_ui_input7.getValue()}",
-                                "symbol" : "=",
-                                "right" : "{admin}"
+                                "symbol" : "defined",
+                                "right" : ""
                             },
                             {
                                 "left" : "{page.xui_ui_input6.getValue()}",
-                                "symbol" : "=",
-                                "right" : "{admin}"
+                                "symbol" : "defined",
+                                "right" : ""
                             }
                         ],
                         "event" : 1
