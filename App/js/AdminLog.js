@@ -61,7 +61,7 @@ xui.Class('App.Name4', 'xui.Module',{
                             {
                                 "left" : "{page.xui_ui_input6}",
                                 "symbol" : "=",
-                                "right" : "{1342}"
+                                "right" : "{admin}"
                             },
                             {
                                 "left" : "{page.xui_ui_input7}",
