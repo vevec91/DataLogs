@@ -59,12 +59,12 @@ xui.Class('App.Name4', 'xui.Module',{
                         "method" : "switch",
                         "conditions" : [
                             {
-                                "left" : "{page.xui_ui_input6}",
+                                "left" : "{page.xui_ui_input7.getValue()}",
                                 "symbol" : "=",
                                 "right" : "{admin}"
                             },
                             {
-                                "left" : "{page.xui_ui_input7}",
+                                "left" : "{page.xui_ui_input6.getValue()}",
                                 "symbol" : "=",
                                 "right" : "{admin}"
                             }
